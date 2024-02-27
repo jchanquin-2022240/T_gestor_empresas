@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "login",
+    "dateExported": "2024-02-27T15:48:25.570Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7f933f50-bbc6-4b0d-a419-793b7afe91ae",
+            "colId": "54b6eda3-4d81-4408-856d-fe0cc573efec",
+            "containerId": "",
+            "name": "post login",
+            "url": "http://localhost:3000/COPEREX/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T15:45:59.703Z",
+            "modified": "2024-02-27T15:47:59.035Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"mail\": \"admin2@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
