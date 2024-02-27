@@ -2,15 +2,18 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
+import adminRoutes from '../src/admin/admin.routes.js';
 import { dbConnection } from './mongo.js';
 
 class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
+        this.adminPath = '/COPEREX/v1/admin';
 
         this.conectarDB();
         this.middlewares();
+        this.routes();
     }
 
     async conectarDB() {
@@ -23,6 +26,10 @@ class Server {
         this.app.use(express.json());
         this.app.use(helmet());
         this.app.use(morgan('dev'));
+    }
+
+    routes() {
+        this.app.use(this.adminPath, adminRoutes);
     }
 
     listen() {

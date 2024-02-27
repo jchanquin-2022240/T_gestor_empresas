@@ -22,3 +22,5 @@ router.post(
         check("mail").custom(existsEmail),
         validarCampos
     ], adminPost);
+
+export default router;
