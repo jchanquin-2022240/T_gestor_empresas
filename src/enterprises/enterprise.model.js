@@ -16,6 +16,14 @@ const EnterpriseSchema = mongoose.Schema({
     category: {
         type: String,
         required: [true, "The category is required"]
+    },
+    partner: {
+        type: String,
+        required: [true, "The partner is required"]
+    },
+    status: {
+        type: Boolean,
+        default: true
     }
 
 });
