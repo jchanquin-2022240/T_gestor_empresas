@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import adminRoutes from '../src/admin/admin.routes.js';
+import enterpriseRoutes from '../src/enterprises/enterprise.routes.js';
 import { dbConnection } from './mongo.js';
 
 class Server {
@@ -10,6 +11,7 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         this.adminPath = '/COPEREX/v1/admin';
+        this.enterprisePath = '/COPEREX/v1/enterprise';
 
         this.conectarDB();
         this.middlewares();
@@ -30,6 +32,7 @@ class Server {
 
     routes() {
         this.app.use(this.adminPath, adminRoutes);
+        this.app.use(this.enterprisePath, enterpriseRoutes);
     }
 
     listen() {

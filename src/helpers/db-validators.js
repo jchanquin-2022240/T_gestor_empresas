@@ -9,8 +9,8 @@ export const existsEmail = async (mail = '') => {
 }
 
 export const existsNameEnterprise = async ( name = '') => {
-    const existsName = await Enterprise.findById(name);
-    if (!existsName) {
+    const existsName = await Enterprise.findOne({name});
+    if (existsName) {
         throw new Error(`The name ${name} already exists in the database`);
     }
 }
