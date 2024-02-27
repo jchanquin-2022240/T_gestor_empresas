@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "register admin",
+    "dateExported": "2024-02-27T03:59:51.581Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "58c50790-a123-43d0-a9dd-197c3371e7ad",
+            "colId": "faf3d81c-69ee-4766-a3ec-908b670bce1e",
+            "containerId": "",
+            "name": "post admin",
+            "url": "http://localhost:3000/COPEREX/v1/admin",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-27T03:54:18.120Z",
+            "modified": "2024-02-27T03:56:34.923Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"admin1\",\n  \"mail\": \"admin1@gmail.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
