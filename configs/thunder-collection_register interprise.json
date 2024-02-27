@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "register interprise",
+    "dateExported": "2024-02-27T06:15:07.704Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1e982a44-ed81-4cda-b9cd-91c309762b54",
+            "colId": "6cbaacd7-581d-4bc1-829b-888c16ca36dd",
+            "containerId": "",
+            "name": "post enterprise",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-27T06:04:03.901Z",
+            "modified": "2024-02-27T06:11:31.992Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"CocaCola\",\n  \"impact\": \"International\",\n  \"experience\": 20,\n  \"category\": \"Industrial\",\n  \"partner\": \"client1\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
