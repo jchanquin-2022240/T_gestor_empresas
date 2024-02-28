@@ -73,8 +73,8 @@ export const enterpriseGetByCategory = async (req, res = response) => {
     const [total, enterprises] = await Promise.all([
         Enterprise.countDocuments(query),
         Enterprise.find(query)
-            .skip(Number(since) || 0)
-            .limit(Number(limite) || 10),
+            .skip(Number(since))
+            .limit(Number(limite)),
     ]);
 
     res.status(200).json({
