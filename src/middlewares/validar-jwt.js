@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import Admin from '../admin/admin.model';
+import Admin from '../admin/admin.model.js';
 
 export const validarJWT = async (req,res, next) => {
     const token = req.header("new-token");
@@ -19,13 +19,14 @@ export const validarJWT = async (req,res, next) => {
             });
         }
 
-        if (!admin.status) {
-            return res.status(401).json({
-                msg: 'Invalid token - user with status:false'
-            });
-        }
+        // if (!admin.status) {
+        //     return res.status(401).json({
+        //         msg: 'Invalid token - user with status:false'
+        //     });
+        // }
 
         req.admin = admin;
+        
         next();
     } catch (e) {
         console.log(e),

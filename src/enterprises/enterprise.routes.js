@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { check } from 'express-validator';
 
 import{
+    enterpriseGet,
     enterprisePost,
 } from "./enterprise.controller.js";
 import {
@@ -9,8 +10,11 @@ import {
 } from "../helpers/db-validators.js";
 
 import { validarCampos } from '../middlewares/validar-campos.js';
+import { validarJWT } from '../middlewares/validar-jwt.js';
 
 const router = Router();
+
+router.get("/", validarJWT, enterpriseGet);
 
 router.post(
     "/",
