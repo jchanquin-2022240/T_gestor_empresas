@@ -4,6 +4,7 @@ import { check } from 'express-validator';
 import{
     enterpriseGet,
     enterprisePost,
+    enterpriseGetByYears,
 } from "./enterprise.controller.js";
 import {
     existsNameEnterprise
@@ -15,6 +16,7 @@ import { validarJWT } from '../middlewares/validar-jwt.js';
 const router = Router();
 
 router.get("/", validarJWT, enterpriseGet);
+router.get("/filterYear", validarJWT, enterpriseGetByYears);
 
 router.post(
     "/",

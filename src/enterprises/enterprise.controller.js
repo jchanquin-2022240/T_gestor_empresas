@@ -17,11 +17,6 @@ export const enterpriseGet = async (req,res = response) => {
     const {limite, since, sortOrder} = req.query;
     const query = {status: true};
 
-
-    /*if (yearsOfExperience) {
-        query.yearsOfExperience = { $gte: Number(yearsOfExperience) };
-    }*/
-
     let sortOptions = {};
     if (sortOrder === 'az' || sortOrder === 'za') {
         // Agregar opciones de clasificación según el parámetro sortOrder
@@ -42,3 +37,23 @@ export const enterpriseGet = async (req,res = response) => {
     })
 }
 
+export const enterpriseGetByYears = async (req, res = response) => {
+    const { limite, since, experience } = req.query;
+
+    const query = {
+        status: true,
+        experience: Number(experience), // Asumiendo que `experience` es de tipo Number
+    };
+
+    const [total, enterprises] = await Promise.all([
+        Enterprise.countDocuments(query),
+        Enterprise.find(query)
+            .skip(Number(since))
+            .limit(Number(limite)),
+    ]);
+
+    res.status(200).json({
+        total,
+        enterprises,
+    });
+};
