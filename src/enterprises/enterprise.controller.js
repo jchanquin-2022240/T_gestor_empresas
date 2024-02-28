@@ -14,12 +14,19 @@ export const enterprisePost = async (req,res) => {
 }
 
 export const enterpriseGet = async (req,res = response) => {
-    const {limite, since} = req.query;
+    const {limite, since, sortOrder} = req.query;
     const query = {status: true};
+
+    let sortOptions = {};
+    if (sortOrder === 'az' || sortOrder === 'za') {
+        // Agregar opciones de clasificación según el parámetro sortOrder
+        sortOptions.name = sortOrder === 'az' ? 1 : -1;
+    }
 
     const [total, enterprise] = await Promise.all([
         Enterprise.countDocuments(query),
         Enterprise.find(query)
+        .sort(sortOptions)
         .skip(Number(since))
         .limit(Number(limite))
     ]);

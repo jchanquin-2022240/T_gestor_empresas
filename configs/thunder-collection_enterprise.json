@@ -1,0 +1,78 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "enterprise",
+    "dateExported": "2024-02-28T16:04:27.062Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fb05f388-c07a-43ff-b133-3b25d1a8107d",
+            "colId": "2e2e3af1-ff3b-4303-b519-094fe0c3ff9e",
+            "containerId": "",
+            "name": "get enterprise",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-28T15:33:36.385Z",
+            "modified": "2024-02-28T16:02:58.206Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxMzQ0OTQsImV4cCI6MTcwOTEzODA5NH0.0dxwDeN1nWJxAvbMZDSuvJz0KxlWF29ClZcKOfS9a0c"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ef7bbfaa-1832-40fe-b4b2-6adb3f797e77",
+            "colId": "2e2e3af1-ff3b-4303-b519-094fe0c3ff9e",
+            "containerId": "",
+            "name": "get a-z",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise?sortOrder=az",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-28T16:01:36.617Z",
+            "modified": "2024-02-28T16:03:05.334Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxMzQ0OTQsImV4cCI6MTcwOTEzODA5NH0.0dxwDeN1nWJxAvbMZDSuvJz0KxlWF29ClZcKOfS9a0c"
+                }
+            ],
+            "params": [
+                {
+                    "name": "sortOrder",
+                    "value": "az",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "46fa36a6-3b83-4699-9d6f-6742d672f887",
+            "colId": "2e2e3af1-ff3b-4303-b519-094fe0c3ff9e",
+            "containerId": "",
+            "name": "get z-a",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise?sortOrder=za",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-28T16:03:30.354Z",
+            "modified": "2024-02-28T16:04:11.201Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxMzQ0OTQsImV4cCI6MTcwOTEzODA5NH0.0dxwDeN1nWJxAvbMZDSuvJz0KxlWF29ClZcKOfS9a0c"
+                }
+            ],
+            "params": [
+                {
+                    "name": "sortOrder",
+                    "value": "za",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
