@@ -57,3 +57,29 @@ export const enterpriseGetByYears = async (req, res = response) => {
         enterprises,
     });
 };
+
+export const enterpriseGetByCategory = async (req, res = response) => {
+    const { limite, since, category } = req.query;
+
+    const query = {
+        status: true,
+    };
+
+    // Agregar filtro por categoría si se proporciona
+    if (category) {
+        query.category = category;
+    }
+
+    const [total, enterprises] = await Promise.all([
+        Enterprise.countDocuments(query),
+        Enterprise.find(query)
+            .skip(Number(since) || 0)
+            .limit(Number(limite) || 10),
+    ]);
+
+    res.status(200).json({
+        total,
+        enterprises,
+    });
+};
+
