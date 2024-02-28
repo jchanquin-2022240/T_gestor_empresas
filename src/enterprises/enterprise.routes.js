@@ -5,6 +5,7 @@ import{
     enterpriseGet,
     enterprisePost,
     enterpriseGetByYears,
+    enterpriseGetByCategory,
 } from "./enterprise.controller.js";
 import {
     existsNameEnterprise
@@ -17,6 +18,7 @@ const router = Router();
 
 router.get("/", validarJWT, enterpriseGet);
 router.get("/filterYear", validarJWT, enterpriseGetByYears);
+router.get("/filterByCategory", validarJWT, enterpriseGetByCategory);
 
 router.post(
     "/",
