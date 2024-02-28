@@ -17,6 +17,11 @@ export const enterpriseGet = async (req,res = response) => {
     const {limite, since, sortOrder} = req.query;
     const query = {status: true};
 
+
+    /*if (yearsOfExperience) {
+        query.yearsOfExperience = { $gte: Number(yearsOfExperience) };
+    }*/
+
     let sortOptions = {};
     if (sortOrder === 'az' || sortOrder === 'za') {
         // Agregar opciones de clasificación según el parámetro sortOrder
