@@ -84,3 +84,35 @@ export const enterpriseGetByCategory = async (req, res = response) => {
     });
 };
 
+export const enterpriseGetExcelReport = async (req, res = response) => {
+    try {
+        const allEnterprises = await Enterprise.find(req.query);
+
+        const workbook = new ExcelJS.Workbook();
+        const worksheet = workbook.addWorksheet('Enterprise');
+
+        worksheet.columns = [
+            { header: 'Name', key: 'name', width: 20 },
+            { header: 'Impact', key: 'impact', width: 20 },
+            { header: 'Experience', key: 'experience', width: 20 },
+            { header: 'Category', key: 'category', width: 20 },
+            { header: 'Partner', key: 'partner', width: 20 }
+        ];
+
+        allEnterprises.forEach(enterprise => worksheet.addRow({
+            name: enterprise.name,
+            impact: enterprise.impact,
+            experience: enterprise.experience,
+            category: enterprise.category,
+            partner: enterprise.partner
+        }));
+
+        res.attachment('report_enterprise.xlsx');
+        await workbook.xlsx.write(res);
+
+        console.log('Report generated and sent successfully');
+    } catch (e) {
+        console.error('error when obtaining companies and generating report:', e);
+        res.status(500).json({ e: 'Error server' });
+    }
+};
