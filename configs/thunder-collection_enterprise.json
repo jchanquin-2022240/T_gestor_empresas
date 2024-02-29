@@ -1,43 +1,43 @@
 {
     "client": "Thunder Client",
     "collectionName": "enterprise",
-    "dateExported": "2024-02-28T23:15:02.627Z",
+    "dateExported": "2024-02-29T07:08:39.439Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "f27d5ec2-b9fa-47c5-8203-2fc7fc276373",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "0bcad2b9-e002-4f2f-8ca2-716d035ae987",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get enterprise",
             "url": "http://localhost:3000/COPEREX/v1/enterprise",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2024-02-28T22:04:07.839Z",
-            "modified": "2024-02-28T22:12:26.967Z",
+            "created": "2024-02-29T05:19:41.266Z",
+            "modified": "2024-02-29T06:37:45.923Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNTgwMDYsImV4cCI6MTcwOTE2MTYwNn0.26rPP16pVpZ5OO13vFKEZceL3B7_SN-S6fmUDiLG7qU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "999a9a44-dbfc-46b3-a958-626ce105e623",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "91d0ccea-a241-4820-afa6-7c2575799170",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get a-z",
             "url": "http://localhost:3000/COPEREX/v1/enterprise?sortOrder=az",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-28T22:04:07.840Z",
-            "modified": "2024-02-28T22:13:30.467Z",
+            "created": "2024-02-29T05:19:41.268Z",
+            "modified": "2024-02-29T06:48:23.876Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNTgwMDYsImV4cCI6MTcwOTE2MTYwNn0.26rPP16pVpZ5OO13vFKEZceL3B7_SN-S6fmUDiLG7qU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [
@@ -50,19 +50,19 @@
             "tests": []
         },
         {
-            "_id": "de4f38f7-83b2-4ee5-bec1-af4d5f94e6f7",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "a575be7f-a603-4f4e-b748-fc6497d6ec41",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get z-a",
             "url": "http://localhost:3000/COPEREX/v1/enterprise?sortOrder=za",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-02-28T22:04:07.841Z",
-            "modified": "2024-02-28T22:13:39.818Z",
+            "created": "2024-02-29T05:19:41.269Z",
+            "modified": "2024-02-29T06:48:16.505Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNTgwMDYsImV4cCI6MTcwOTE2MTYwNn0.26rPP16pVpZ5OO13vFKEZceL3B7_SN-S6fmUDiLG7qU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [
@@ -75,72 +75,96 @@
             "tests": []
         },
         {
-            "_id": "71ef9627-12c8-4d15-949c-8995d0c6e0c4",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "7a6492e3-5277-48b0-8cf0-7b9848ae15fa",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get filterYear",
-            "url": "http://localhost:3000/COPEREX/v1/enterprise/filterYear?experience=20",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise/filterYear?experience=15",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2024-02-28T22:32:52.897Z",
-            "modified": "2024-02-28T22:34:19.417Z",
+            "created": "2024-02-29T05:19:41.270Z",
+            "modified": "2024-02-29T06:48:04.200Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNTgwMDYsImV4cCI6MTcwOTE2MTYwNn0.26rPP16pVpZ5OO13vFKEZceL3B7_SN-S6fmUDiLG7qU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [
                 {
                     "name": "experience",
-                    "value": "20",
+                    "value": "15",
                     "isPath": false
                 }
             ],
             "tests": []
         },
         {
-            "_id": "b101c202-0217-441b-9422-ea514ac0f1a3",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "d1dce4c4-2d72-45c3-be34-5ffbd1011e12",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get filterCategory",
-            "url": "http://localhost:3000/COPEREX/v1/enterprise/filterByCategory?category=Tecnología",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise/filterByCategory?category=Comercialización",
             "method": "GET",
             "sortNum": 50000,
-            "created": "2024-02-28T22:42:07.336Z",
-            "modified": "2024-02-28T23:11:01.314Z",
+            "created": "2024-02-29T05:19:41.271Z",
+            "modified": "2024-02-29T06:59:57.969Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNTgwMDYsImV4cCI6MTcwOTE2MTYwNn0.26rPP16pVpZ5OO13vFKEZceL3B7_SN-S6fmUDiLG7qU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [
                 {
                     "name": "category",
-                    "value": "Tecnología",
+                    "value": "Comercialización",
                     "isPath": false
                 }
             ],
             "tests": []
         },
         {
-            "_id": "ede2cf36-406e-4799-81ca-3b5b1d1b77d6",
-            "colId": "591c9c96-89f8-467b-aa21-8266ba1d2f03",
+            "_id": "bbb764c9-f9a3-41af-96a3-744a91d2add6",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
             "containerId": "",
             "name": "get excelReport",
             "url": "http://localhost:3000/COPEREX/v1/enterprise/excelReport",
             "method": "GET",
             "sortNum": 60000,
-            "created": "2024-02-28T23:10:14.627Z",
-            "modified": "2024-02-28T23:11:21.045Z",
+            "created": "2024-02-29T05:19:41.272Z",
+            "modified": "2024-02-29T06:46:14.507Z",
             "headers": [
                 {
                     "name": "new-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYWU2YmI1NzdkMmU2NGQ2MGIzM2IiLCJpYXQiOjE3MDkxNjE4NjgsImV4cCI6MTcwOTE2NTQ2OH0.LGxVe7FFPrcRt6s1x8y_YSVXrYqSpcF2V11JuRK9yFQ"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e835ace4-1461-4eed-bf49-fe5189fcd89f",
+            "colId": "0b054551-32bd-4347-94d2-c882d12990cb",
+            "containerId": "",
+            "name": "put enterprise",
+            "url": "http://localhost:3000/COPEREX/v1/enterprise/65dd7d13924d57224993a710",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-29T06:36:08.332Z",
+            "modified": "2024-02-29T06:44:19.968Z",
+            "headers": [
+                {
+                    "name": "new-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRkNWQ3MjE5MzFmMDQxMDhhOGU5OTciLCJpYXQiOjE3MDkxODg2NTcsImV4cCI6MTcwOTE5MjI1N30.yaKPLXuCu89hFwfx69YZ1bU4AbkdRGK4nwvdHr85jsM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Coca-Cola\",\n  \"impact\": \"International\",\n  \"experience\": 15,\n  \"category\": \"Comercialización\",\n  \"partner\": \"client1\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]

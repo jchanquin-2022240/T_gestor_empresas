@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "register admin",
-    "dateExported": "2024-02-27T03:59:51.581Z",
+    "dateExported": "2024-02-29T07:08:27.174Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "58c50790-a123-43d0-a9dd-197c3371e7ad",
-            "colId": "faf3d81c-69ee-4766-a3ec-908b670bce1e",
+            "_id": "efc284f0-871d-4bf0-9263-d09364db83c5",
+            "colId": "35ebc300-e98c-4ef6-865d-86a5dfe8344f",
             "containerId": "",
             "name": "post admin",
             "url": "http://localhost:3000/COPEREX/v1/admin",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-27T03:54:18.120Z",
-            "modified": "2024-02-27T03:56:34.923Z",
+            "created": "2024-02-29T05:19:41.351Z",
+            "modified": "2024-02-29T05:19:41.351Z",
             "headers": [],
             "params": [],
             "body": {

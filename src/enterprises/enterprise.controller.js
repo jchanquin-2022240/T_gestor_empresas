@@ -68,7 +68,7 @@ export const enterpriseGetByCategory = async (req, res = response) => {
 
     // Agregar filtro por categoría si se proporciona
     if (category) {
-        query.category = category;
+        query.category = category;  
     }
 
     const [total, enterprises] = await Promise.all([
