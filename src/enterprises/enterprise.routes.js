@@ -7,9 +7,11 @@ import{
     enterpriseGetByYears,
     enterpriseGetByCategory,
     enterpriseGetExcelReport,
+    putEnterprise,
 } from "./enterprise.controller.js";
 import {
-    existsNameEnterprise
+    existsNameEnterprise,
+    existsEnterpriseById
 } from "../helpers/db-validators.js";
 
 import { validarCampos } from '../middlewares/validar-campos.js';
@@ -26,6 +28,7 @@ router.get("/excelReport", validarJWT, enterpriseGetExcelReport);
 router.post(
     "/",
     [
+        validarJWT,
         check("name", "The name cannot be empty ").not().isEmpty(),
         check("name").custom(existsNameEnterprise),
         check("impact", "the impact cannot be empty").not().isEmpty(),
@@ -34,5 +37,15 @@ router.post(
         check("partner", "the partner cannot be empty").not().isEmpty(),
         validarCampos
     ], enterprisePost);
+
+router.put(
+    "/:id",
+    [
+        validarJWT,
+        check("id", "Id invalid").isMongoId(),
+        check("name").custom(existsNameEnterprise),
+        check("id").custom(existsEnterpriseById),
+        validarCampos,
+    ], putEnterprise);
 
 export default router;

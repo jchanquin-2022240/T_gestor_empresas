@@ -116,3 +116,14 @@ export const enterpriseGetExcelReport = async (req, res = response) => {
         res.status(500).json({ e: 'Error server' });
     }
 };
+
+export const putEnterprise = async (req, res) => {
+    const { id } = req.params;
+    const {_id, ...rest} = req.body;
+
+    await Enterprise.findByIdAndUpdate(id, rest);
+
+    const enterprise = await Enterprise.findOne({ _id : id});
+
+    res.status(200).json({ msg: 'Updated enterprise', enterprise});
+}

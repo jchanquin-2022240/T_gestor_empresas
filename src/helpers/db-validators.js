@@ -14,3 +14,10 @@ export const existsNameEnterprise = async ( name = '') => {
         throw new Error(`The name ${name} already exists in the database`);
     }
 }
+
+export const existsEnterpriseById = async ( id = '') => {
+    const existsId = await Enterprise.findById(id);
+    if (!existsId) {
+        throw new Error(`Id: ${id} does not exist in the database`);
+    }
+}
